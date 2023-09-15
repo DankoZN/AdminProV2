@@ -8,6 +8,7 @@ import { NopagesfoundComponent } from './nopagesfound/nopagesfound.component';
 import { appRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
 import { AuthModule } from './auth/auth.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,10 @@ import { AuthModule } from './auth/auth.module';
   ],
   imports: [
     BrowserModule,
-    appRoutingModule,
+    appRoutingModule, //todos los modulos van en los imports
     PagesModule,
-    AuthModule
+    AuthModule,
+    SharedModule //shared para breadcrums y headers
 
   ],
   bootstrap: [AppComponent]

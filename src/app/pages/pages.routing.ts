@@ -1,5 +1,10 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+
+//los Módulos contienen los componentes, y son los encargados de redireccionar al archivo components.ts
+
+//Rutas de componentes
+
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
